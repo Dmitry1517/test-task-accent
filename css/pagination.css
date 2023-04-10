@@ -1,0 +1,21 @@
+.pagination {
+  margin: 10px 0;
+}
+
+.pagination__inner {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination__list {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.pagination__item {
+  border: 1px solid #a5a5a5;
+  cursor: pointer;
+  padding: 10px;
+}

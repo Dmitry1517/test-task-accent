@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Магазин</title>
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/cards.css">
+	<link rel="stylesheet" href="./css/filters.css">
+	<link rel="stylesheet" href="./css/modal.css">
+	<link rel="stylesheet" href="./css/pagination.css">
+</head>
+
+<body class="body">
+
+	<header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <h3 class="header__logo">SHOP of BRANDS</h3>
+        <div class="header__cart-icon">
+					<div class="header__cart-icon-inner">
+						<img src="./img/cart-icon-30.png" alt="cart">
+						<div class="header__count">
+							<div class="header__value">0</div>
+						</div>
+					</div>
+				</div>
+      </div>
+    </div> 
+  </header>
+
+	<div class="filters">
+    <div class="container">
+      <h4 class="filters__title">Бренды</h4>
+      <div class="filters__group">
+				<div class="filters__inner">
+					<div class="filters__items"></div>
+					<div class="filters__buttons">
+						<div class="filters__button filters__button">Сбросить фильтры</div>
+					</div>
+				</div>
+			</div>
+    </div>
+  </div>
+
+	<div class="cards">
+		<div class="container">
+			<div class="cards__inner"></div>
+		</div>
+	</div>
+
+	<div class="pagination">
+		<div class="container">
+			<div class="pagination__inner">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal_none">
+		<div class="modal__inner">
+			<div class="modal__top">
+				<h4 class="modal__title">Ваш заказ</h4>
+				<button class="modal__btn">close</button>
+			</div>
+			
+			<div class="modal__alert" role="alert">Корзина пуста</div>
+			
+			<div class="cart"></div>
+			<div class="cart-total">
+				<p><span class="modal__text">Итого:</span>
+					<span class="total-price">0</span>
+					<span class="modal__dollar">$</span></p>
+			</div>
+				
+			<div class="modal__order-form modal__order-form_none">
+				<h5 class="modal__order-title">Оформить заказ</h4>
+				<form class="modal__form">
+					<div>
+						<input type="text" class="modal__input" placeholder="Ваш номер телефона">
+					</div>
+					<button type="submit" class="modal__submit">Заказать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-res modal-res_none">
+		<div class="modal__res">
+			<h2>Ваш заказ успешно отправлен</h2>
+			<button class="modal__res-btn">OK</button>
+		</div>
+	</div>
+	
+	
+	<script src="./js/cart.js"></script>
+	<script src="./js/renderProducts.js"></script>
+	<script src="./js/filters.js"></script>
+	<script src="./js/calcCartPrice.js"></script>
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter.js"></script>
+	<script src="./js/pagination.js"></script>
+	
+
+</body>
+</html>
